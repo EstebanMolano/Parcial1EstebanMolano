@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Inventario"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:id="@+id/txt_inventario"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Lapicero 20"
+        android:layout_below="@+id/txt_inventario"
+        android:id="@+id/txt_lapicero"
+
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txt_lapicero"
+        android:layout_below="@+id/txt_inventario"
+        android:text="Comprar"
+        android:id="@+id/btn_lapicero"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuaderno 30"
+        android:layout_below="@+id/txt_lapicero"
+        android:id="@+id/txt_cuaderno"
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txt_cuaderno"
+        android:layout_below="@+id/btn_lapicero"
+        android:text="Comprar"
+        android:id="@+id/btn_cuaderno"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Libreta 40"
+        android:layout_below="@+id/txt_cuaderno"
+        android:id="@+id/txt_libreta"
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txt_libreta"
+        android:layout_below="@+id/btn_cuaderno"
+        android:text="Comprar"
+        android:id="@+id/btn_libreta"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camiseta 80"
+        android:layout_below="@+id/txt_libreta"
+        android:id="@+id/txt_camiseta"
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txt_camiseta"
+        android:layout_below="@+id/btn_libreta"
+        android:text="Comprar"
+        android:id="@+id/btn_camiseta"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saco 100"
+        android:layout_below="@+id/txt_camiseta"
+        android:id="@+id/txt_saco"
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txt_saco"
+        android:layout_below="@+id/btn_camiseta"
+        android:text="Comprar"
+        android:id="@+id/btn_saco"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_saco"
+        android:gravity="center"
+        android:text="Tus puntos"
+        android:id="@+id/txt_tusPuntos"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Terminar"
+        android:id="@+id/btn_terminar"
+        android:layout_below="@+id/txt_tusPuntos"/>
+
+
+
+</RelativeLayout>

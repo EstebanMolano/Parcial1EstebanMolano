@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button android:id="@+id/btn_preguntas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:enabled="false"
+    android:text="Preguntas" />
+
+    <Button android:id="@+id/btn_tienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_preguntas"
+        android:enabled="false"
+        android:text="Tienda" />
+
+    <Button android:id="@+id/btn_preguntasDificiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_tienda"
+        android:enabled="false"
+        android:text="Preguntas Dificiles" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_valorTotalT"
+        android:layout_below="@id/btn_preguntasDificiles"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:text="Tus puntos Actuales : "
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_valorTotal"
+        android:layout_toEndOf="@id/txt_valorTotalT"
+        android:layout_below="@id/btn_preguntasDificiles"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:background="@color/colorPrimary"
+        />
+
+
+
+
+
+</RelativeLayout>
